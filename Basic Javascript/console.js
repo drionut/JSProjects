@@ -32,9 +32,13 @@
 // var expression = 5;
 
 // Assignment Submission # 1
-var nameIsDeprecated = "John", // an expression
+var nameIsDeprecated = "John",
   surname = "Doe", // variables in one statement
   surname = surname.fontcolor("blue"), // assigning a color to a variable
   dateOfBirth = "12-12-1212";
 
 document.write(nameIsDeprecated + " " + surname); // using concatenation
+
+// Resubmit Javascript - Assignment #1
+console.log(227 / 6); // arithmetic expression
+console.log("String" + " expression"); // expression that evaluates to a string
