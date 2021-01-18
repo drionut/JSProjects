@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js"></script>
+    <title>Project 2 - Functions</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="roll">
+        <!-- when mouse is moved out of the button, call the function that is responsible with content of #output -->
+        <!-- when click event is triggered call function responsible with generating randomText -->
+        <button onmouseout="getElements()" onclick="generate()" class="clickMe">
+          Click Me
+        </button>
+      </div>
+
+      <div id="output">
+        <p id="randomText"></p>
+      </div>
+    </div>
+  </body>
+</html>
