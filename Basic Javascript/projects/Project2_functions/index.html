@@ -10,9 +10,15 @@
   <body>
     <div id="container">
       <div id="roll">
-        <!-- when mouse is moved out of the button, call the function that is responsible with content of #output -->
+        <!-- when mouse is moved out of the button, 
+          call the function that is responsible with content of #output 
+          and change the author text color -->
         <!-- when click event is triggered call function responsible with generating randomText -->
-        <button onmouseout="getElements()" onclick="generate()" class="clickMe">
+        <button
+          onmouseout="getElements(), changeAuthorColor('red')"
+          onclick="generate()"
+          class="clickMe"
+        >
           Click Me
         </button>
       </div>

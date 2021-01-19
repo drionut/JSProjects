@@ -10,8 +10,15 @@ function generate() {
     "If you always put limit on everything you do, physical or anything else. <br>";
   // using shorthand string concatenation
   quote += " It will spread into your work and into your life. <br><br><br>";
-  var author = "Bruce Lee";
+  var author = "<span id = 'author'>Bruce Lee</span>";
 
   //   modifying #randomText HTML element
   document.getElementById("randomText").innerHTML = quote + author;
+}
+
+// Challenge
+// 1 - Write and execute your own JavaScript function.
+// 2 - Write and execute the document.getElementById() method.
+function changeAuthorColor(color) {
+  document.getElementById("author").style.color = color;
 }
