@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js"></script>
+    <title>Project 3 - Math Functions</title>
+  </head>
+  <body onload="onLoad()">
+    <div id="container">
+    <form action="">
+      <label for="firstNumber">Input a number</label>
+      <input type="number" id="firstNumber" /> <br />
+      <label for="secondNumber">Input a number</label>
+      <input type="number" id="secondNumber" /> <br />
+      <input class="clickMe" type="button" onclick="add()" value="ADD the numbers" />
+    </form>
+    <p>
+      Result:
+      <span id="result"></span>
+    </p>
+
+    <div id="output">
+
+        <button class="clickMe" onclick="showAddition()">Show me addition</button>
+        <button class="clickMe" onclick="showSubtraction()">Show me subtraction</button>
+        <button class="clickMe" onclick="showDivision()">Show me division</button>
+        <button class="clickMe" onclick="showMultiplication()">Show me multiplication</button>
+        <button class="clickMe" onclick="modulusOperator()">Show me modulus</button>
+        <button class="clickMe" onclick="negationOperator()">Show me Unuary Operator</button>
+        <p id="math">Example:</p>
+    </div>
+
+    <div id="output">
+
+        <h3>Increment and Decrement Operations</h5>
+        <p>
+            <button class="clickMe" onclick="increment()">Increment</button>
+            <button class="clickMe" onclick="decrement()">Decrement</button>
+            <br>
+          <span id="number">10</span>
+        </p>
+    </div>
+
+
+    <div id="output">
+
+        <h3>Using some Math Object Methods</h3>
+        <ul>
+            <li id="generate"></li>
+            <li id="round"></li>
+            <li id="power"></li>
+        </ul>
+    </div>
+</div>
+  </body>
+</html>

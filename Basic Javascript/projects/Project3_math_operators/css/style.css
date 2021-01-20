@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background-color: #32577a;
+}
+#container {
+  height: 300px;
+  width: 60%;
+  margin: 100px auto;
+  color: white;
+  /* background-color: white; */
+  text-align: center;
+}
+#container h3 {
+  color: black;
+}
+
+.clickMe {
+  margin: 20px 10px;
+  outline: none; /* removing default border when button is clicked */
+  text-transform: uppercase;
+  padding: 5px 15px;
+  height: 40px;
+  /* width: 100px; */
+  border: thin solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: black;
+  transition: 0.5s;
+  color: white;
+  opacity: 0.6;
+}
+.clickMe:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: thin solid black;
+  opacity: 0.8;
+}
+
+#output {
+  border: 1px solid #ccc;
+}
+#output ul {
+  list-style-type: none;
+}
