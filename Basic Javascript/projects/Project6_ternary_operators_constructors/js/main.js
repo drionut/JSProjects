@@ -8,10 +8,7 @@ function rideFunction() {
 function canVote() {
   var age = document.getElementById("age").value;
   var diff = 18 - age;
-  var oldEnough =
-    age >= 18
-      ? "You can vote!"
-      : "You are not old enough to vote. Try again in " + diff + " years.";
+  var oldEnough = age >= 18 ? "You can vote!" : "You are not old enough to vote. Try again in " + diff + " years.";
   document.getElementById("vote").innerHTML = oldEnough;
 }
 
@@ -31,12 +28,7 @@ var Erik = new Vehicle("Ford", "Focus", 1992, "Mustard");
 // https://www.w3schools.com/js/js_object_constructors.asp
 function myFunction() {
   document.getElementById("new_and_this").innerHTML =
-    "Jack drives a " +
-    Jack.VehicleColor +
-    "-colored " +
-    Jack.VehicleModel +
-    " manufactured in " +
-    Jack.VehicleYear;
+    "Jack drives a " + Jack.VehicleColor + "-colored " + Jack.VehicleModel + " manufactured in " + Jack.VehicleYear;
 }
 
 // nested function
