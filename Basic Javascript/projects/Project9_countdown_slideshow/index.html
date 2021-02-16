@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Project 9 - countdown slideshow</title>
+  </head>
+  <body>
+      <section class="slideshow-container">
+          
+          <!-- Images and caption texts -->
+          <div class="mySlides">
+              <img class='fade' src="./images/img_lights_wide.jpg" alt="lights wide" />
+              <div class="captionText">caption 1</div>
+            </div>
+            
+            <div class="mySlides">
+                <img  class='fade' src="./images/img_mountains_wide.jpg" alt="mountains wide" />
+                <div class="captionText">caption 2</div>
+            </div>
+            
+            <div class="mySlides">
+                <img  class='fade' src="./images/img_nature_wide.jpg" alt="nature wide" />
+                <div class="captionText">caption 3</div>
+            </div>
+            
+            <div class="mySlides">
+                <img class='fade' src="./images/img_snow_wide.jpg" alt="snow wide" />
+                <div class="captionText">caption 4</div>
+            </div>
+            
+            <div class="mySlides">
+                <img class='fade' src="./images/img_nature_wide.jpg" alt="nature wide" />
+                <div class="captionText">caption 5</div>
+            </div>
+            
+            
+            <!-- previous and next buttons -->
+            <a class="prev" onclick="prevSlide()">&#10094</a>
+            <a class="next" onclick="nextSlide()">&#10095</a>
+            
+        </section>
+        
+        <section class="countdown">
+            <p>Please input when we should change the image (seconds):</p>
+            <input type="number" id="seconds"/>
+            <button onclick="countdown()">Start Countdown</button>
+        
+            <p id="timer"></p>
+        
+            
+            
+        </section>
+        
+        <script src="./js/main.js"></script>
+    </body>
+    </html>
+    
