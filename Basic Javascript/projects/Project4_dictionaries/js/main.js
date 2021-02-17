@@ -12,5 +12,5 @@ function Europe() {
 
   delete Country.Area;
 
-  document.getElementById("outputText").innerText = Country.Area;
+  document.getElementById("outputText").innerText = Country.Name + " capital is " + Country.Capital;
 }
