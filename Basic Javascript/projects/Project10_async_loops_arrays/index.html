@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>async & defer Functions</title>
+
+    <!-- loading script from head tag -->
+    <script src="./js/defer_head.js"></script>
+  </head>
+  <body>
+    <!-- script with error -->
+    <script>
+      console.log("script with error is loaded inside <body> ...");
+      a = "Always ";
+      b = "remember: ";
+      document.write(a + b);
+
+      x = "you ";
+      y = "are ";
+      document.write(x + y);
+
+      m = "unique, ";
+      n = "just like everyone else.";
+
+      // error:  z is not defined
+      // variables are written in wrong order
+      // possible fix is to rename the 'm' variable with z
+      //   document.write(n + z);
+
+      document.write(m + n);
+
+      // usign .length property for strings
+      var string = a.concat(b, x, y, m, n);
+      console.log('String: "' + string + '" is ' + string.length + " characters long.");
+    </script>
+
+    <!-- w/o async attribute -->
+    <!-- we cannot recognise #p1 since async.js is loaded before the element -->
+    <!-- <script src="./js/async.js"></script> -->
+
+    <!-- w/ async we are waiting for document to load-->
+    <script src="./js/async.js" async></script>
+
+    <!-- w/o defer attribute defer_body is loaded before loops -->
+    <script src="./js/defer_body.js" defer></script>
+    <p id="p1">Hello</p>
+
+    <!-- counting to ten using while loop -->
+    <!-- using continue and break -->
+    <button onclick="count_to_ten(), continue_break()">Click to start counting</button>
+    <p id="count_to_ten"></p>
+    <p id="count_by_two"></p>
+
+    <!-- using a for loop -->
+    <button onclick="for_loop()">Click to loop through instruments</button>
+    <p id="list_of_instruments"></p>
+
+    <!-- array -->
+    <button onclick="array_function()">Click to use array_function()</button>
+    <p id="array"></p>
+
+    <!-- using const keyword -->
+    <button onclick="constant_function()">Check product</button>
+    <button id="change_button" style="visibility: hidden" onclick="change_value(), add_property()">
+      Change the brand
+    </button>
+    <p id="constant"></p>
+
+    <!-- using let and var -->
+    <p id="let"></p>
+
+    <!-- using object with properties and "description" method -->
+    <button onclick="object_function()">Display properties of an object{}</button>
+    <p id="object"></p>
+
+    <!-- if the script from the head tag is using defer this will load first -->
+    <!--  -->
+    <script src="./js/loops.js"></script>
+    <script src="./js/constant.js"></script>
+    <script src="./js/let.js"></script>
+    <script src="./js/return.js"></script>
+    <script src="./js/objects.js"></script>
+  </body>
+</html>
