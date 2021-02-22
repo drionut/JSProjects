@@ -1,0 +1,75 @@
+/* centering containers */
+#formContainer {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 500px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+}
+
+#fullName,
+#email,
+#textArea {
+  width: 60%;
+  margin-bottom: 10px;
+  border: 1px solid #000504;
+}
+
+/* some font style */
+form > label {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-family: "campton", sans-serif;
+}
+
+/* send button */
+#send {
+  cursor: pointer;
+  width: 30%;
+  margin-top: 40px;
+  display: inline-block;
+  color: #0000ff;
+  border: 1px solid;
+  text-decoration: none;
+  background: transparent;
+  font-weight: bold;
+  line-height: 2;
+}
+#send:hover {
+  background: #0000ff;
+  color: white;
+}
+/* styling the error message tooltip */
+#fullNameError,
+#emailError,
+#messageError {
+  position: absolute;
+  /* align-self: flex-start; */
+  text-align: center;
+  padding: 2px 10px 2px 10px;
+  margin-left: 310px;
+  width: auto;
+  /* background-color: black; */
+  color: aliceblue;
+  border-radius: 0 15px 15px 30px;
+  background: #ff0060;
+  font-size: 14px;
+
+  display: none;
+}
+#fullNameError {
+  margin-top: 29px;
+}
+#emailError {
+  margin-top: 86px;
+}
+#messageError {
+  margin-top: 144px;
+}

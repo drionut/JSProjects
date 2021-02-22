@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <button><a href="../">Back</a></button>
+    <section id="formContainer">
+      <form novalidate>
+        <label for="fullName">Your name</label>
+        <input type="text" id="fullName" name="fullName" placeholder="type your full name" />
+        <span id="fullNameError">Please fill in this field</span>
+
+        <label for="email">What's your email?</label>
+        <input type="email" id="email" name="email" placeholder="type your email" />
+        <span id="emailError">Please enter a valid email</span>
+
+        <label for="message">Your Message</label>
+        <textarea name="message" id="textArea" cols="30" rows="10"></textarea>
+        <span id="messageError">Please enter a message</span>
+        <input type="submit" id="send" value="Send" onclick="return validateFields()" />
+      </form>
+    </section>
+  </body>
+</html>
