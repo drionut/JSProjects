@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <title>data-attribute</title>
+  </head>
+  <body>
+    <ol>
+      <li data-family-relation="father">Mark</li>
+      <li data-family-relation="mother">Kelly</li>
+      <li data-family-relation="sister">Maxine</li>
+    </ol>
+
+    <h3>Characters</h3>
+    <h4>Click on a universe to see a character - (check console)</h4>
+    <ul>
+      <li onclick="displayType(this)" data-character-type="Batman">DC</li>
+      <li onclick="displayType(this)" data-character-type="Luke Skywalker">Star Wars</li>
+      <li onclick="displayType(this)" data-character-type="Thor">Marvel</li>
+      <li onclick="displayType(this)" data-character-type="Jean-Luc Picard">Star Trek</li>
+    </ul>
+  </body>
+</html>
