@@ -1,0 +1,62 @@
+/* Challenge */
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: brown;
+}
+div {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: rgba(255, 0, 0, 0.6);
+}
+/* end challenge */
+#menu {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0 0 100px;
+    width: 100px;
+    height: 40px;
+}
