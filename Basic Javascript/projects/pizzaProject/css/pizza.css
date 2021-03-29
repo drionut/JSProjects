@@ -6,19 +6,24 @@ h1 {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: brown;
 }
-div {
+.menu {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     color: rgba(255, 0, 0, 0.6);
+    width: 200px;
+}
+#header-section {
+    margin: 20px auto;
+    width: 400px;
 }
 /* end challenge */
-#menu {
-    width: 400px;
+#menuBg {
+    width: 600px;
     height: 470px;
     margin: 10px auto;
 }
 
 #frmMenu {
-    width: 400px;
+    width: 600px;
     height: 200px;
 }
 
@@ -34,7 +39,10 @@ div {
     height: 200px;
     float: left;
 }
-
+.center {
+    overflow: hidden;
+    float: left;
+}
 .right {
     width: 200px;
     height: 200px;
@@ -46,6 +54,7 @@ div {
     height: 190px;
     margin: 0 auto;
     float: left;
+    clear: both;
 }
 
 #cart {

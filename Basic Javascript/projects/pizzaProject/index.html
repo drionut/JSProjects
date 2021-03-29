@@ -9,9 +9,11 @@
         <link rel="stylesheet" href="./css/pizza.css" />
     </head>
     <body>
-        <div id="menuBG">
-            <h1 style="margin: 0 0px 0 20px">Pizza Drill Tutorial</h1>
-            <input type="button" id="btnOrder" onclick="getReceipt()" value="Place Order" />
+        <div id="menuBg">
+            <div id="header-section">
+                <h1>Pizza Drill Tutorial</h1>
+                <input type="button" id="btnOrder" onclick="getReceipt()" value="Place Order" />
+            </div>
             <form id="frmMenu">
                 <div class="menu left">
                     <h3>Size:</h3>
@@ -19,6 +21,16 @@
                     <input type="radio" class="size" name="Size" value="Personal Pizza" />Personal Pizza <br />
                     <input type="radio" class="size" name="Size" value="Medium Pizza" />Medium Pizza <br />
                     <input type="radio" class="size" name="Size" value="Extra Large Pizza" />Extra Large Pizza <br />
+                </div>
+
+                <div class="menu center">
+                    <h3>Vegetables</h3>
+                    <input type="checkbox" class="vegetables" name="Vegetable" value="Mushrooms" />Mushrooms <br />
+                    <input type="checkbox" class="vegetables" name="Vegetable" value="Onions" />Onions <br />
+                    <input type="checkbox" class="vegetables" name="Vegetable" value="Tomatoes" />Tomatoes <br />
+                    <input type="checkbox" class="vegetables" name="Vegetable" value="Olives" />Olives <br />
+                    <input type="checkbox" class="vegetables" name="Vegetable" value="Green Peppers" />Green Peppers
+                    <br />
                 </div>
 
                 <div class="menu right">
