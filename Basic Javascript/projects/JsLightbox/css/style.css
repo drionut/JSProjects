@@ -127,6 +127,7 @@ body {
     opacity: 0.3;
     cursor: pointer;
 }
+.active,
 .thumb:hover {
     opacity: 1;
 }

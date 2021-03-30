@@ -17,53 +17,73 @@
 
         <main class="gallery">
             <section class="row">
-                <div class="column">
-                    <img src="./assets/berries-2277_640.jpg" alt="berries" />
+                <div class="column" onclick="toSlide(1); openModal()">
+                    <img src="./assets/berries-2277_640.jpg" class="image" alt="berries" />
                 </div>
-                <div class="column">
-                    <img src="./assets/grapes-690230_640.jpg" alt="grapes" />
+                <div class="column" onclick="toSlide(2); openModal()">
+                    <img src="./assets/grapes-690230_640.jpg" class="image" alt="grapes" />
                 </div>
-                <div class="column">
-                    <img src="./assets/suit-673697_640.jpg" alt="dude with banana" />
+                <div class="column" onclick="toSlide(3); openModal()">
+                    <img src="./assets/suit-673697_640.jpg" class="image" alt="dude with a banana" />
                 </div>
-                <div class="column">
-                    <img src="./assets/salad-2068220_640.jpg" alt="bunch of tomatoes" />
+                <div class="column" onclick="toSlide(4); openModal()">
+                    <img src="./assets/salad-2068220_640.jpg" class="image" alt="salad" />
                 </div>
             </section>
 
             <div id="modal">
-                <span class="close">&times;</span>
+                <span class="close" onclick="closeModal()">&times;</span>
                 <div class="modal-content">
-                    <div class="slide" style="display: none">
+                    <div class="slide" onclick="toSlide(1)">
                         <div class="numberText">1 / 4</div>
                         <img src="./assets/berries-2277_640.jpg" />
                     </div>
-                    <div class="slide" style="display: block">
+                    <div class="slide" onclick="toSlide(2)">
                         <div class="numberText">2 / 4</div>
                         <img src="./assets/grapes-690230_640.jpg" alt="" />
                     </div>
-                    <div class="slide" style="display: none">
+                    <div class="slide" onclick="toSlide(3)">
                         <div class="numberText">3 / 4</div>
                         <img src="./assets/suit-673697_640.jpg" alt="" />
                     </div>
-                    <div class="slide" style="display: none">
+                    <div class="slide" onclick="toSlide(4)">
                         <div class="numberText">4 / 4</div>
                         <img src="./assets/salad-2068220_640.jpg" alt="" />
                     </div>
 
                     <!-- Next/previous controls -->
-                    <a class="prev">&#10094;</a>
-                    <a class="next">&#10095;</a>
+                    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1)">&#10095;</a>
 
                     <div class="caption-container">
-                        <p id="caption">Grapes</p>
+                        <p id="caption"></p>
                     </div>
 
                     <div class="thumbnails">
-                        <img src="./assets/berries-2277_640.jpg" class="thumb column" alt="berries" />
-                        <img src="./assets/grapes-690230_640.jpg" class="thumb column" alt="grapes" />
-                        <img src="./assets/salad-2068220_640.jpg" class="thumb column" alt="salad" />
-                        <img src="./assets/suit-673697_640.jpg" class="thumb column" alt="dude with a banana" />
+                        <img
+                            src="./assets/berries-2277_640.jpg"
+                            class="thumb column"
+                            onclick="toSlide(1)"
+                            alt="berries"
+                        />
+                        <img
+                            src="./assets/grapes-690230_640.jpg"
+                            class="thumb column"
+                            onclick="toSlide(2)"
+                            alt="grapes"
+                        />
+                        <img
+                            src="./assets/suit-673697_640.jpg"
+                            class="thumb column"
+                            onclick="toSlide(3)"
+                            alt="dude with a banana"
+                        />
+                        <img
+                            src="./assets/salad-2068220_640.jpg"
+                            class="thumb column"
+                            onclick="toSlide(4)"
+                            alt="salad"
+                        />
                     </div>
                 </div>
             </div>
