@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Modal Image Gallery</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="header-nav">
+                <h1 class="logo">Image Gallery</h1>
+            </nav>
+        </header>
+
+        <main class="gallery">
+            <section class="row">
+                <div class="column">
+                    <img src="./assets/berries-2277_640.jpg" alt="berries" />
+                </div>
+                <div class="column">
+                    <img src="./assets/grapes-690230_640.jpg" alt="grapes" />
+                </div>
+                <div class="column">
+                    <img src="./assets/suit-673697_640.jpg" alt="dude with banana" />
+                </div>
+                <div class="column">
+                    <img src="./assets/salad-2068220_640.jpg" alt="bunch of tomatoes" />
+                </div>
+            </section>
+
+            <div id="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    <div class="slide" style="display: none">
+                        <div class="numberText">1 / 4</div>
+                        <img src="./assets/berries-2277_640.jpg" />
+                    </div>
+                    <div class="slide" style="display: block">
+                        <div class="numberText">2 / 4</div>
+                        <img src="./assets/grapes-690230_640.jpg" alt="" />
+                    </div>
+                    <div class="slide" style="display: none">
+                        <div class="numberText">3 / 4</div>
+                        <img src="./assets/suit-673697_640.jpg" alt="" />
+                    </div>
+                    <div class="slide" style="display: none">
+                        <div class="numberText">4 / 4</div>
+                        <img src="./assets/salad-2068220_640.jpg" alt="" />
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption">Grapes</p>
+                    </div>
+
+                    <div class="thumbnails">
+                        <img src="./assets/berries-2277_640.jpg" class="thumb column" alt="berries" />
+                        <img src="./assets/grapes-690230_640.jpg" class="thumb column" alt="grapes" />
+                        <img src="./assets/salad-2068220_640.jpg" class="thumb column" alt="salad" />
+                        <img src="./assets/suit-673697_640.jpg" class="thumb column" alt="dude with a banana" />
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
