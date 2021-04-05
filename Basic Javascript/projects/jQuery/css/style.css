@@ -1,0 +1,16 @@
+h1 {
+    border-radius: 0px;
+    color: gray;
+    background-color: #fda;
+    text-align: center;
+    width: 450px;
+    height: 40px;
+    margin: 50px auto;
+}
+
+#loaded {
+    color: black;
+    border-radius: 25px;
+    background-color: aqua;
+    transition: background-color 2s, border-radius 2s, color 2s;
+}
