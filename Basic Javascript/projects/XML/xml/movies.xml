@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies>
+    <movie>
+        <title>Schindler`s List</title>
+        <director>Steven Spielberg</director>
+        <actors>
+            <actor>
+                <name>Liam Neeson</name>
+                <name>Ben Kingsley</name>
+                <name>Ralph Fiennes</name>
+            </actor>
+        </actors>
+        <year>1993</year>
+    </movie>
+</movies>
